@@ -8,7 +8,6 @@ fun encabezado(): Unit {
 }
 
 
-
 fun main() {
     // Area definicion de datos
     var monto: Double // Indica valores monetarios en pesos
@@ -48,20 +47,17 @@ fun main() {
         x = x + 1
     }
 
-
-pie(plazo,interes)
+    pie(plazo, interes)
 
 }
 
-
-fun pie(plazo:Int,interes:Double): Unit {
+fun pie(plazo: Int, interes: Double): Unit {
 
     println("todos los intereses se encuentran informados trabajan bajo la tasa de interes y cantidad de dias indicados a continuacion") // Informacion de software
     println("DIAS : $plazo")
     println("TASA DE INTERES = $interes%")
     println("------------ thanks for had use Growing Cash ® ------------") // Informacion de software
     println("------------ for support as please enter in SmartekIndustries.com or contact us Development staff ------------") // Informacion de software
-
 
 }
 
