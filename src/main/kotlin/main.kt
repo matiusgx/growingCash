@@ -1,10 +1,11 @@
 import java.text.DecimalFormat
 
 fun encabezado(): Unit {
-    println("------------ Welcome to Growing Cash ® ------------") // Informacion de software
-    println("------------ Service development By Smartek industries S.A ® ------------") // Informacion de software
-    println("------------ Since on dic. 2020 ------------") // Informacion de software
-    println("------------ Author: Matheus ® ------------")
+
+    println { "------------ Welcome to Growing Cash ® ------------".red.bold } // Informacion de software
+    println { "------------ Service development By Smartek industries S.A ® ------------".red.bold } // Informacion de software
+    println { "------------ Since on dic. 2020 ------------".green.bold } // Informacion de software
+    println { "------------ Author: Matheus ® ------------".green.bright }
 }
 
 
@@ -32,7 +33,7 @@ fun main() {
     val df = DecimalFormat("$ #.##") // formato de exhibicion con 2 decimales
     var x = 0
     while (x < 9) {
-        //TODO ver formato de valores
+        // TODO ver formato de valores
         auxDeposito = numList[x].toDouble()
         monto = numList[x] * ((interes / 100) * plazo / 365)
         auxIntMasDeposito = numList[x] + monto
@@ -52,7 +53,7 @@ fun main() {
 }
 
 fun pie(plazo: Int, interes: Double): Unit {
-
+// TODO Agregar colores
     println("todos los intereses se encuentran informados trabajan bajo la tasa de interes y cantidad de dias indicados a continuacion") // Informacion de software
     println("DIAS : $plazo")
     println("TASA DE INTERES = $interes%")

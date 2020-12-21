@@ -1,0 +1,7 @@
+https://www.codeproject.com/Tips/5255355/How-to-Put-Color-on-Windows-Console
+
+For modification, you need to run the command below (optional on CMD as administrator):
+reg add HKEY_CURRENT_USER\Console /v VirtualTerminalLevel /t REG_DWORD /d 0x00000001 /f
+
+In case of error (it'll have no error, but...), here is the command to undo: (optional on CMD as administrator)
+reg add HKEY_CURRENT_USER\Console /v VirtualTerminalLevel /t REG_DWORD /d 0x00000000 /f
